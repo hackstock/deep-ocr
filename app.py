@@ -48,7 +48,6 @@ while(True):
         canvas[100:500,100:500] = 0
     elif key == ord('p'):
         image = canvas[100:500,100:500]
-        char_image = cv2.resize(image,(28,28))
         result = net.predict(image)
         print("PREDICTION : ",result)
 
